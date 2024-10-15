@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava</title>
+    <link rel="stylesheet" href="{%  static 'estilos.css'  %}">
+</head>
+<body>
+    <h1> hola templates es mi primera vez</h1>
+    <p> jaja voy bien</p>
+    <!-- Menú de Navegación  version 1 for end for
+    <hr>
+    <ul>
+    {% for i in objeto %}
+    <li> {{i.nombre}}</li>
+    
+    {% endfor %}
+
+-->
+<!-- version 2 -->
+            <hr>
+            <ul>
+            {% for i in objeto %}
+            <li> <a href="alumno/{{i.id}}">{{i.nombre}}</a> </li>
+
+            {% endfor %}
+
+</ul>
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
